@@ -47,3 +47,8 @@
 ##Dispositivo = Mayoria de telefonos moviles (vertical)
 ##Resolucion = B/w 320px to 479px
 */
+
+.tamañoContenidoPadel {
+    height: 1150px;
+    width: 775px;
+}

@@ -107,6 +107,7 @@ p, ol {
     grid-template-areas:    "h1 h1"
                             "historia dinamica";
     grid-template-columns: 50%;
+    grid-template-rows: 0 95%;
     margin: 4em;
     margin-bottom: 20vh;
     margin-top: 2em;
@@ -116,6 +117,7 @@ p, ol {
     display: block;
     width: 40vw;
     height: 46vh;
+    margin: 0 auto;
 }
 
 .dinamica {
@@ -367,4 +369,58 @@ p, ol {
     text-align: center;
     padding: 0.3em;
     font-size: 1.4em;
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+    .contenedor{
+        display: grid;
+        grid-template-areas:    "nav nav"
+                                "main main"
+                                "footer footer";
+    }
+
+    nav {
+        grid-area: nav;
+        max-width: 1100px;
+        min-width: 1025px;
+    }
+
+    main{
+        grid-area: main;
+        max-width: 1200px;
+        min-width: 1025;
+    }
+
+    .tamañoContenidoPadel {
+        height: 1800px;
+    }
+
+    .historia img {
+        width: 30vw;
+        height: 40vh;
+        padding: 0 auto;
+        margin: 0 auto;
+    }
+
+    .video {
+        padding-top: 2em;
+        display: block;
+        margin: 0 auto;
+        width: 900px;
+    }
+
+    .ganadoresHistoricos h2 {
+        max-width: 1100px;
+        margin: 2em auto;
+    }
+
+    .ganadoresWpt {
+        display: grid;
+        grid-template-areas:    "femenino"
+                                 "masculino";
+        width: 1100px;
+        padding-bottom: 20vh;
+        margin: 2em 9em;
+    }
 }
