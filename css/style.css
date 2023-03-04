@@ -421,6 +421,12 @@ p, ol {
                                  "masculino";
         width: 1100px;
         padding-bottom: 20vh;
-        margin: 2em 9em;
+        margin: 2em 12em;
+    }
+
+    .ganadoresWpt article div div img {
+        width: 268px;
+        height: 401px;
+        margin: 0 2em;
     }
 }
