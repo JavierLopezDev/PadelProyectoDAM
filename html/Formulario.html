@@ -20,6 +20,34 @@
         </nav>
         <main>
             <h1>Formulario</h1>
+            <form>
+                <p><label for="nombre">Nombre: </label><input type="text" name="nombre" id="nombre" placeholder="Escribe aquí tu nombre" required=""></p>
+                <p><label for="apellidos">Apellidos: </label><input type="text" name="apellidos" id="apellidos" placeholder="Escribe aquí tus apellidos"></p>
+                <p><label for="fechaNacimiento">Fecha de nacimiento: </label><input type="date" name="fechaNacimiento" id="fechaNacimiento" required=""></p>
+                <p><label for="email">Email: </label><input type="email" name="email" id="email" placeholder="Escribe aquí tu correo electrónico" required=""></p>
+                <fieldset>
+                    <legend>Sexo</legend>
+                    <p><label>Hombre </label><input type="radio" name="sexo" value="Hombre"></p>
+                    <p><label>Mujer </label><input type="radio" name="sexo" value="Mujer"></p>
+                </fieldset>
+                <p><label for="codigoPostal">Código Postal (CP): </label><input type="number" name="codigoPostal" id="codigoPostal" min="01000" max="52080"></p>
+                <p><label for="escuderiaFav">Seleccione su escudería favorita</label>
+                    <select name="escuderiaFav" id="escuderiaFav">
+                        <option value="Oracle Red Bull Racing">Oracle Red Bull Racing</option>
+                        <option value="Scuderia Ferrari">Scuderia Ferrari</option>
+                        <option value="Mercedes-AMG PETRONAS">Mercedes-AMG PETRONAS</option>
+                        <option value="BWT Alpine F1 Team">BWT Alpine F1 Team</option>
+                        <option value="McLaren Formula 1 Team">McLaren Formula 1 Team</option>
+                        <option value="Alfa Romeo">Alfa Romeo</option>
+                        <option value="Aston Martin Aramco">Aston Martin Aramco</option>
+                        <option value="MoneyGram Haas F1 Team">MoneyGram Haas F1 Team</option>
+                        <option value="Scuderia AlphaTauri">Scuderia AlphaTauri</option>
+                        <option value="Williams Racing">Williams Racing</option>
+                    </select>
+                </p>
+                <input class="btn" type="submit" value="Suscríbete">
+                <input class="btn" type="reset" value="Restablecer">
+            </form>
         </main>
     </div>    
 </body>
