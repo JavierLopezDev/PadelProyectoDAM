@@ -509,7 +509,7 @@ p, ol {
     }
 }
 
-@media (min-width: 391px) and (max-width: 767px) {
+@media (min-width: 480px) and (max-width: 767px) {
 
     .contenedor{
         display: grid;
