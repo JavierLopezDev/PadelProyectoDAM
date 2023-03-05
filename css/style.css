@@ -22,6 +22,7 @@ body{
     grid-template-areas:    "nav nav nav"
                             "main main main"
                             "footer footer footer";
+    grid-template-columns: 100%;
 }
 
 /*      NAV     */
@@ -395,7 +396,7 @@ p, ol {
 
     .wptH{
         grid-area: main;
-        width: 1280px;
+        width: 1300px;
         margin: 0;
         box-sizing: border-box;
     }
@@ -476,9 +477,9 @@ p, ol {
 
     .wptH{
         grid-area: main;
-        width: 1024px;
         margin: 0;
         box-sizing: border-box;
+        width: 1200px;
     }
 
     .video {
@@ -563,7 +564,7 @@ p, ol {
         grid-area: main;
         width: 480px;
         margin: 0;
-        box-sizing: border-box;
+        width: 767px;
     }
 
     .margenWPT {
