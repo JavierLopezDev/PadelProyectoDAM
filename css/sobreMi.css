@@ -18,8 +18,8 @@ body{
 .contenedor{
     display: grid;
     grid-template-areas:    "nav nav nav"
-                            "main main main"
-                            "footer footer footer";
+                            "main main main";
+    grid-template-columns: 100%;
 }
 
 /*      NAV     */
@@ -62,7 +62,51 @@ nav ul li img{
 
 /*      MAIN        */
 
+.sobreMi {
+    grid-area: main;
+    margin: 2.5em 6em;
+    border: 2px solid white;
+    border-radius: 2em;
+    background-color: #001775;
+    margin-bottom: 10vh;
+}
+
 h1{
     text-align: center;
     font-size: 3em;
+    padding-top: 1em;
+}
+
+.sobreMi p {
+    text-align: justify;
+    padding: 2em;
+    font-size: 1.5em;
+}
+
+.galeria {
+    grid-area: main;
+    margin: 4em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.galeria div {
+    display: inline;
+    margin: 2em;
+    
+}
+
+.galeria div img {
+    border: 4px solid white;
+    border-radius: 2em;
+}
+
+.galeria div video {
+    border: 4px solid white;
+    border-radius: 2em;
+    width: 80vw;
 }
