@@ -62,7 +62,45 @@ nav ul li img{
 
 /*      MAIN        */
 
+main {
+    grid-area: main;
+}
+
 h1{
     text-align: center;
     font-size: 3em;
+}
+
+form{
+    margin: 1em 5em;
+    font-size: 1.3em;
+    padding: 1.3em;
+}
+
+form p {
+    padding: 0.7em;
+}
+
+form input {
+    color: black;
+    width: 20vw;
+    height: 2.5vw;
+    font-size: 1em;
+}
+
+form select {
+    color: black;
+    width: 20vw;
+    height: 2.5vw;
+    font-size: 1em;
+}
+
+form option {
+    color: black;
+}
+
+.btn {
+    margin: 2em 0.5em;
+    background-color: aqua;
+    font-weight: bold;
 }
