@@ -393,6 +393,13 @@ p, ol {
         height: 1800px;
     }
 
+    .wptH{
+        grid-area: main;
+        width: 1280px;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
     .historia img {
         width: 30vw;
         height: 40vh;
@@ -438,12 +445,12 @@ p, ol {
 
     nav {
         grid-area: nav;
-        max-width: 700px;
+        max-width: 1024px;
     }
 
     main{
         grid-area: main;
-        max-width: 700px;
+        max-width: 1024px;
     }
 
     .padel {
@@ -452,17 +459,17 @@ p, ol {
         grid-template-areas:    "h1"
                                 "historia" 
                                 "dinamica";
-        grid-template-columns: 700px;
+        grid-template-columns: 900px;
         margin: 2.5em;
     }
 
     .tamañoContenidoPadel {
-        height: 1350px;
+        height: 1050px;
     }
 
     .historia img {
         width: 50vw;
-        height: 60vh;
+        height: 50vh;
         padding: 0 auto;
         margin: 0 auto;
     }
@@ -492,7 +499,7 @@ p, ol {
                                  "masculino";
         width: 1100px;
         padding-bottom: 20vh;
-        margin: 2em 12em;
+        margin: 2em 6em;
     }
 
     .ganadoresWpt article div div img {
@@ -500,4 +507,80 @@ p, ol {
         height: 401px;
         margin: 0 2em;
     }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+    .contenedor{
+        display: grid;
+        grid-template-areas:    "nav"
+                                "main"
+                                "footer";
+    }
+
+    nav {
+        grid-area: nav;
+        max-width: 680px;
+    }
+
+    main{
+        grid-area: main;
+        max-width: 767px;
+    }
+
+    .padel {
+        display: grid;
+        grid-area: main;
+        grid-template-areas:    "h1"
+                                "historia" 
+                                "dinamica";
+        grid-template-columns: 680px;
+        margin: 2.5em;
+    }
+
+    .tamañoContenidoPadel {
+        height: 1400px;
+    }
+
+    .historia img {
+        width: 70vw;
+        height: 60vh;
+        padding: 0 auto;
+        margin: 0 auto;
+    }
+
+    .wptH{
+        grid-area: main;
+        width: 767px;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    .video {
+        padding-top: 2em;
+        display: block;
+        margin: 0 auto;
+        width: 300px;
+    }
+
+    .ganadoresHistoricos h2 {
+        max-width: 300px;
+        margin: 2em auto;
+    }
+
+    .ganadoresWpt {
+        display: grid;
+        grid-template-areas:    "femenino"
+                                 "masculino";
+        width: 300px;
+        padding-bottom: 20vh;
+        margin: 2em 0.25em;
+    }
+
+    .ganadoresWpt article div div img {
+        width: 250px;
+        height: 401px;
+        margin: 0 2em;
+    }
+
 }
