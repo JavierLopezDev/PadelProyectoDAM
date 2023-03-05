@@ -584,3 +584,77 @@ p, ol {
     }
 
 }
+
+@media (max-width: 480px) {
+    .contenedor{
+        display: grid;
+        grid-template-areas:    "nav"
+                                "main"
+                                "footer";
+    }
+
+    nav {
+        grid-area: nav;
+        max-width: 680px;
+    }
+
+    main{
+        grid-area: main;
+        max-width: 767px;
+    }
+
+    .padel {
+        display: grid;
+        grid-area: main;
+        grid-template-areas:    "h1"
+                                "historia" 
+                                "dinamica";
+        grid-template-columns: 680px;
+        margin: 2.5em;
+    }
+
+    .tamañoContenidoPadel {
+        height: 1400px;
+    }
+
+    .historia img {
+        width: 70vw;
+        height: 60vh;
+        padding: 0 auto;
+        margin: 0 auto;
+    }
+
+    .wptH{
+        grid-area: main;
+        width: 767px;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    .video {
+        padding-top: 2em;
+        display: block;
+        margin: 0 auto;
+        width: 300px;
+    }
+
+    .ganadoresHistoricos h2 {
+        max-width: 300px;
+        margin: 2em auto;
+    }
+
+    .ganadoresWpt {
+        display: grid;
+        grid-template-areas:    "femenino"
+                                 "masculino";
+        width: 300px;
+        padding-bottom: 20vh;
+        margin: 2em 0.25em;
+    }
+
+    .ganadoresWpt article div div img {
+        width: 250px;
+        height: 401px;
+        margin: 0 2em;
+    }
+}
