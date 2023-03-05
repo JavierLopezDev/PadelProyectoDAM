@@ -104,3 +104,60 @@ form option {
     background-color: aqua;
     font-weight: bold;
 }
+
+footer {
+    display: grid;
+    grid-area: footer;
+    grid-template-areas:    "contacto redes"
+                            "mapa mapa";
+    background-color: #001775;
+    color: white;
+    padding: 1em;
+}
+
+footer div {
+    padding: 1em;
+    width: 100%;
+}
+
+.contacto {
+    grid-area: contacto;
+}
+
+.redesSociales {
+    display: flex;
+    grid-area: redes;
+    flex-direction: column;
+}
+
+.redesSociales h4 {
+    text-align: right;
+}
+
+footer a {
+    color: white;
+}
+
+.iconosRRSS {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    padding-right: 0;
+}
+
+.iconosRRSS img {
+    width: 3em;
+    height: 3em;
+}
+
+.iconosRRSS a {
+    transition: 1s;
+}
+
+.iconosRRSS a:hover {
+    transform: scale(1.5);
+}
+
+footer p {
+    padding: 0.3em;
+}
